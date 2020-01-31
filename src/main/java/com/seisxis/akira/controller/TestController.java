@@ -19,10 +19,13 @@ public class TestController {
 	public String hello(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
 			Model model) {
 
-		Test test = new Test();
-		test.setName(name);
-
-		testRepository.save(test);
+		Test test = testRepository.findByName(name);
+		
+		if (test == null) {
+			test = new Test();
+			test.setName(name);
+			testRepository.save(test);
+		}
 
 		return "test";
 	}
