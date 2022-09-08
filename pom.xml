@@ -27,7 +27,7 @@
 		<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
 		<thymeleaf-spring5.version>3.0.11.RELEASE</thymeleaf-spring5.version>
 		<hibernate-core.version>5.4.2.Final</hibernate-core.version>
-		<postgres-driver.version>42.2.9</postgres-driver.version>
+		<postgres-driver.version>42.4.1</postgres-driver.version>
 		<tomcat-dbcp.version>9.0.1</tomcat-dbcp.version>
 	</properties>
 
